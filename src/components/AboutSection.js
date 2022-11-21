@@ -1,7 +1,7 @@
 import React from "react";
 import travelLuggage from "../img/travelLuggage.jpg";
 
-function About() {
+function AboutSection() {
   return (
     <div>
       <div className="description">
@@ -31,4 +31,4 @@ function About() {
   );
 }
 
-export default About;
+export default AboutSection;
