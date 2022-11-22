@@ -1,9 +1,10 @@
 import React from "react";
+import styled from "styled-components";
 import travelLuggage from "../img/travelLuggage.jpg";
 
 function AboutSection() {
   return (
-    <div>
+    <About>
       <div className="description">
         <div className="title">
           <div className="hide">
@@ -27,8 +28,18 @@ function AboutSection() {
           />
         </div>
       </div>
-    </div>
+    </About>
   );
 }
+
+// Styled components
+const About = styled.div`
+  min-height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 10rem;
+  color: white;
+`;
 
 export default AboutSection;
