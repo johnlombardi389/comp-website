@@ -13,10 +13,10 @@ function Nav() {
       </h1>
       <ul>
         <li>
-          <NavLink to={"/"}>About</NavLink>
+          <NavLink to={"/"}>About Us</NavLink>
         </li>
         <li>
-          <NavLink to={"/work"}>Work</NavLink>
+          <NavLink to={"/destinations"}>Destinations</NavLink>
         </li>
         <li>
           <NavLink to={"/contact"}>Contact</NavLink>

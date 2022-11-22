@@ -4,16 +4,16 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 // Images
 
-function Work() {
+function Destinations() {
   return (
     <StyledWork>
-      <Items>
-        <h2>Item Name</h2>
+      <Locations>
+        <h2>Italy</h2>
         <div className="line"></div>
         <Link>
           <img src="" alt="" />
         </Link>
-      </Items>
+      </Locations>
     </StyledWork>
   );
 }
@@ -27,7 +27,7 @@ const StyledWork = styled.div`
   }
 `;
 
-const Items = styled.div`
+const Locations = styled.div`
   padding-bottom: 10rem;
   .line {
     height: 0.5rem;
@@ -41,4 +41,4 @@ const Items = styled.div`
   }
 `;
 
-export default Work;
+export default Destinations;
