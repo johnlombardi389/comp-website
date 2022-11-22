@@ -54,6 +54,12 @@ const GlobalStyle = createGlobalStyle`
       font-size: 1.4rem;
       line-height: 150%;
     }
+
+    svg {
+      color: #23d997;
+      width: 3rem;
+      height: 3rem;
+    }
 `;
 
 export default GlobalStyle;
