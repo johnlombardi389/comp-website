@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 // Styles
 import styled from "styled-components";
 
@@ -6,19 +7,19 @@ function Nav() {
   return (
     <StyledNav>
       <h1>
-        <a id="logo" href="#">
+        <NavLink id="logo" to={"/"}>
           Website
-        </a>
+        </NavLink>
       </h1>
       <ul>
         <li>
-          <a href="#">About</a>
+          <NavLink to={"/"}>About</NavLink>
         </li>
         <li>
-          <a href="#">Work</a>
+          <NavLink to={"/work"}>Work</NavLink>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <NavLink to={"/contact"}>Contact</NavLink>
         </li>
       </ul>
     </StyledNav>
