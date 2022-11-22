@@ -5,7 +5,7 @@ import travelLuggage from "../img/travelLuggage.jpg";
 function AboutSection() {
   return (
     <About>
-      <div className="description">
+      <Description>
         <div className="title">
           <div className="hide">
             <h2>Title</h2>
@@ -21,13 +21,13 @@ function AboutSection() {
           <p>Contact us for any help traveling</p>
           <button>Contact Us</button>
         </div>
-        <div className="image">
-          <img
-            src={travelLuggage}
-            alt="Waiting in airport with luggage watching plane"
-          />
-        </div>
-      </div>
+      </Description>
+      <Image>
+        <img
+          src={travelLuggage}
+          alt="Waiting in airport with luggage watching plane"
+        />
+      </Image>
     </About>
   );
 }
@@ -40,6 +40,23 @@ const About = styled.div`
   align-items: center;
   padding: 5rem 10rem;
   color: white;
+`;
+
+const Description = styled.div`
+  flex: 1;
+  padding-right: 5rem;
+  h2 {
+    font-weight: lighter;
+  }
+`;
+
+const Image = styled.div`
+  flex: 1;
+  img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+  }
 `;
 
 export default AboutSection;
