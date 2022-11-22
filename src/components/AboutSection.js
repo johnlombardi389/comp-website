@@ -7,17 +7,17 @@ function AboutSection() {
     <About>
       <Description>
         <div className="title">
-          <div className="hide">
+          <Hide>
             <h2>Title</h2>
-          </div>
-          <div className="hide">
+          </Hide>
+          <Hide>
             <h2>
               Another title <span>for this website</span>
             </h2>
-          </div>
-          <div className="hide">
+          </Hide>
+          <Hide>
             <h2>Title 3</h2>
-          </div>
+          </Hide>
           <p>Contact us for any help traveling</p>
           <button>Contact Us</button>
         </div>
@@ -52,11 +52,16 @@ const Description = styled.div`
 
 const Image = styled.div`
   flex: 1;
+  overflow: hidden;
   img {
     width: 100%;
     height: 80vh;
     object-fit: cover;
   }
+`;
+
+const Hide = styled.div`
+  overflow: hidden;
 `;
 
 export default AboutSection;
