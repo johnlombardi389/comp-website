@@ -1,7 +1,11 @@
 import React from "react";
+// Animation
+import { AnimateSharedLayout } from "framer-motion";
 // Styles
 import styled from "styled-components";
 import { About } from "../styles";
+// Components
+import Toggle from "./Toggle";
 
 function FaqSection() {
   return (
@@ -9,52 +13,47 @@ function FaqSection() {
       <h2>
         Any Questions? <span>FAQ</span>
       </h2>
-      <div className="question">
-        <h4>How do I do something?</h4>
-        <div className="answer">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
-            nesciunt.
-          </p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
+      <AnimateSharedLayout>
+        <Toggle title="How do I get started?">
+          <div className="answer">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+              nesciunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </Toggle>
 
-      <div className="question">
-        <h4>How do I do something?</h4>
-        <div className="answer">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
-            nesciunt.
-          </p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
+        <Toggle title="Can you book multiple hotels for us?">
+          <div className="answer">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+              nesciunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </Toggle>
 
-      <div className="question">
-        <h4>How do I do something?</h4>
-        <div className="answer">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
-            nesciunt.
-          </p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        </div>
-      </div>
+        <Toggle title="Do you offer any travel insurance?">
+          <div className="answer">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+              nesciunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </Toggle>
 
-      <div className="question">
-        <h4>How do I do something?</h4>
-        <div className="answer">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
-            nesciunt.
-          </p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
+        <Toggle title="How much does each service cost?">
+          <div className="answer">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+              nesciunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </Toggle>
+      </AnimateSharedLayout>
     </Faq>
   );
 }
