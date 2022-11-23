@@ -1,4 +1,7 @@
 import React from "react";
+// Framer Motion
+import { motion } from "framer-motion";
+// Images
 import travelLuggage from "../img/travelLuggage.jpg";
 // Styles
 import { About, Description, Image, Hide } from "../styles";
@@ -7,17 +10,17 @@ function AboutSection() {
   return (
     <About>
       <Description>
-        <div className="title">
+        <motion.div>
           <Hide>
-            <h2>We make traveling easy and effortless.</h2>
+            <motion.h2>We make traveling easy and effortless.</motion.h2>
           </Hide>
           <Hide>
-            <h2>
+            <motion.h2>
               Let us plan <span>your dream vacation</span>
-            </h2>
+            </motion.h2>
           </Hide>
           <Hide>
-            <h2>and turn it into reality.</h2>
+            <motion.h2>and turn it into reality.</motion.h2>
           </Hide>
           <p>
             The fun begins here! Our agency specialists are here for you before,
@@ -26,7 +29,7 @@ function AboutSection() {
             planning your dream vacation.
           </p>
           <button>Contact Us</button>
-        </div>
+        </motion.div>
       </Description>
       <Image>
         <img
