@@ -4,7 +4,12 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 // Animation
 import { motion } from "framer-motion";
-import { pageAnimation } from "../animation";
+import {
+  pageAnimation,
+  fade,
+  photoAnimation,
+  lineAnimation,
+} from "../animation";
 // Images
 import italyMain from "../img/italyMain.jpg";
 import japanMain from "../img/japanMain.jpg";
@@ -21,10 +26,12 @@ function Destinations() {
       exit="exit"
     >
       <Locations>
-        <h2>Italy</h2>
-        <div className="line"></div>
+        <motion.h2 variants={fade}>Italy</motion.h2>
+        <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link>
-          <img src={italyMain} alt="Italy" />
+          <Hide>
+            <motion.img variants={photoAnimation} src={italyMain} alt="Italy" />
+          </Hide>
         </Link>
       </Locations>
 
@@ -84,6 +91,10 @@ const Locations = styled.div`
     height: 70vh;
     object-fit: cover;
   }
+`;
+
+const Hide = styled.div`
+  overflow: hidden;
 `;
 
 export default Destinations;

@@ -45,6 +45,15 @@ export const photoAnimation = {
     transition: {
       ease: "easeOut",
       duration: 0.75,
+      delay: 1.5,
     },
+  },
+};
+
+export const lineAnimation = {
+  hidden: { width: "0%" },
+  show: {
+    width: "100%",
+    transition: { duration: 1 },
   },
 };
