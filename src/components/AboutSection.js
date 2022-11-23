@@ -9,17 +9,22 @@ function AboutSection() {
       <Description>
         <div className="title">
           <Hide>
-            <h2>Title</h2>
+            <h2>We make traveling easy and effortless.</h2>
           </Hide>
           <Hide>
             <h2>
-              Another title <span>for this website</span>
+              Let us plan <span>your dream vacation</span>
             </h2>
           </Hide>
           <Hide>
-            <h2>Title 3</h2>
+            <h2>and turn it into reality.</h2>
           </Hide>
-          <p>Contact us for any help traveling</p>
+          <p>
+            The fun begins here! Our agency specialists are here for you before,
+            during, and after your trip. From booking flights to negotiating the
+            best hotel prices, our goal is to remove all the stress from
+            planning your dream vacation.
+          </p>
           <button>Contact Us</button>
         </div>
       </Description>
