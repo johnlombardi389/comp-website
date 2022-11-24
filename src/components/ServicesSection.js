@@ -6,10 +6,15 @@ import mapHand from "../img/mapHand.jpg";
 // Styles
 import styled from "styled-components";
 import { About, Description, Image } from "../styles";
+// Animation
+import { fade } from "../animation";
+import { useScroll } from "./useScroll";
 
 function ServicesSection() {
+  const [element, controls] = useScroll();
+
   return (
-    <Services>
+    <Services variants={fade} animate={controls} initial="hidden" ref={element}>
       <Description>
         <h2>
           Our <span>services include many things</span>
