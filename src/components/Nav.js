@@ -13,7 +13,7 @@ function Nav() {
     <StyledNav>
       <h1>
         <NavLink id="logo" to={"/"}>
-          Website
+          The Travel Agents
         </NavLink>
       </h1>
       <ul>
@@ -69,6 +69,11 @@ const StyledNav = styled.nav`
   #logo {
     font-size: 1.5rem;
     font-weight: lighter;
+    font-family: "Ultra", serif;
+    @media (max-width: 1300px) {
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
   }
   li {
     padding-left: 10rem;

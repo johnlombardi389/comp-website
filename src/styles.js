@@ -11,7 +11,6 @@ export const About = styled(motion.div)`
   @media (max-width: 1300px) {
     display: block;
     padding: 2rem 2rem;
-    text-align: center;
   }
 `;
 
@@ -23,8 +22,10 @@ export const Description = styled.div`
   }
   @media (max-width: 1300px) {
     padding: 0;
+    text-align: center;
     button {
       margin: 2rem 0rem 5rem 0rem;
+      font-size: 1.5rem;
     }
   }
 `;

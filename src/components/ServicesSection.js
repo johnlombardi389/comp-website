@@ -23,7 +23,7 @@ function ServicesSection() {
           <Card>
             <div className="icon">
               <FaPlane />
-              <h3>Find flight</h3>
+              <h3>Find flights</h3>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
           </Card>
@@ -39,7 +39,7 @@ function ServicesSection() {
           <Card>
             <div className="icon">
               <FaMoneyBillAlt />
-              <h3>Money exchange</h3>
+              <h3>Exchange money</h3>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
           </Card>
