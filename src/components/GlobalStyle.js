@@ -37,6 +37,9 @@ const GlobalStyle = createGlobalStyle`
   h2 {
       font-weight: lighter;
       font-size: 4rem;
+      @media (max-width: 1300px) {
+        margin-top: 2rem;;
+      }
     }
 
   h3 {
